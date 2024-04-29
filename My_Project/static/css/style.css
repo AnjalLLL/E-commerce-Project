@@ -1,0 +1,429 @@
+/* Css reste */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+   padding-top: 60px;
+    background-color: aliceblue;
+}
+/* Navigation Content */
+
+
+/* Navigation: Logo section */
+#navbar #logo {
+    margin-left: 12%;
+    margin-top: 10px;
+}
+#navbar #logo a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-style: bold;
+}
+/* Navigation List section */
+#navbar {
+    margin-left: 10px;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgb(72, 127, 127);
+
+}
+#navbar ul {
+    display: flex;
+    margin-left: 20px;
+
+}
+#navbar ul li {
+    list-style: none;
+}
+#navbar ul li a {
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left:25px;
+    margin-right: 20px;
+    display: block;
+    color: azure;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* Navigation search Section */
+#navbar .search {
+    
+    position: flex;
+    right: 0px;
+    margin-top: 10px;
+    margin-left: 27%;
+}  
+#navbar .search input {
+    padding: 5px 10px; 
+    border-radius: 10px;
+}
+/* navbar hover */
+#navbar ul li a:hover {
+    background-color: rgb(123, 143, 157);
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 4px 7px;
+}
+/* Hover for search */
+#navbar .search:hover {
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-property: calc(10);
+}
+ /* box */
+ #offerBox {
+    height: 300px;
+    width: 75%;
+    margin-top: 5px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(72, 127, 120);
+    display: relative;
+    display: flex;
+ }
+ #offerBox #box-image{
+    display: flex;
+    height: 200px;
+    width: auto;
+    align-items: end;
+    margin-top: 25px;
+    margin-left: 270px;
+ }
+ #offerBox #box-image img {
+    height: 200px;
+    width: auto;
+ }
+ #box-text {
+
+    width: 40%;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-family: 60px;
+ }
+ #box-text p {
+    margin-top: 10px;
+    margin-left:25px;
+    height: auto;
+    width: 350px;
+    font-size: 30px;
+ }
+ #offerBox #offer-button {
+    
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+ }
+ #offer-button input {
+    padding: 10px 5px 10 px 5px;
+    border-radius: 10px;
+
+ }
+ span  {
+    height: auto;
+    margin-top: 50px;
+    margin-left: 12%;
+    font-size: 22px;
+    
+ }
+ /* Categories */
+ #categories {
+    margin-top: 20px;
+    height: 300px;
+    width:75% ;
+    margin-left: 12%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ #categories #cata {
+    height: 100%;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ #categories #cata .Cata-items {
+    background-color: #dee5e7;
+    width: 240px;
+    margin-top: 10px;
+    margin-left:30px ;
+    margin-right: 10px;
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 95px;
+    font-size: 20px;
+    
+ }
+ #categories #cata .Cata-items:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgb(196, 187, 176);
+ }
+
+ #categories #cata .Cata-items img {
+    padding: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+ } 
+
+ @media (max-width: 800px) {
+    .Cata-items  .items {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .Cata-items .items {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+/*top sales */
+#Top-Sales {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 800px;
+    width:75% ;
+    margin-left: 12%;
+    display: flex;
+    flex-wrap: wrap;
+ }
+#top-sales {
+    height: 350px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ #top-sales .sales-items {
+    background-color: #dee5e7;
+    width: 240px;
+    margin-top: 10px;
+    margin-left:30px ;
+    margin-right: 10px;
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;  
+    font-size: 20px;
+
+ }
+ #top-sales .sales-items img {
+    padding: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+ } 
+ #top-sales .sales-items:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgb(196, 187, 176);
+ }
+
+ /* brand */
+ #brand {
+    margin-top: 20px;
+    height: 400px;
+    width:75% ;
+    margin-left: 12%;
+    display: flex;
+ }
+ #brand #brand-items {
+    margin-top: 20px;
+    height: 100%;
+    width:100% ;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ #brand #brand-items .brands {
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ #brand #brand-items .brands img {
+    padding: auto;
+    height: 150px;
+    width: 150px;
+    object-fit: fill;
+ }
+
+ /* Footer */
+ #footer {
+    background-color: #dee5e7;
+    position: fixed;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 12%;
+    margin-right: 12%;
+    height: 300px;
+    width: 75%;
+ }
+ #footer #footer-content {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 50%;
+    height: 100%;
+ }
+ #footer #footer-content #content {
+    display: ;
+    height: 100%;
+    width: 100px;
+ }
+ #footer #footer-content #content p {
+    font-size: 20px;
+ }
+ #footer #footer-content #payment {
+    display: ;
+    position:absolute;
+    height: auto;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 270px;
+
+    
+ }
+ #footer #footer-content #payment .pay {
+    display:flex ;
+    margin: 10px 0px 0px 0px;
+    position: ;
+    height :50px;
+    width: 70px;
+
+ } 
+ #footer #footer-content #payment .pay img {
+    display: flex;
+    margin-top: 10px;
+    padding: auto;
+    height: 50px;
+    width: 70px;
+    object-fit: fill;
+ }
+
+#footer-link {
+    background:rgb(72, 127, 127) ;
+    display: flex;
+    height: 50px;
+    width: 100%;
+ }
+ #footer-link ul {
+    display: flex;
+    margin-left: 60%;
+    margin-bottom: 20px;
+    align-items: end;
+
+}
+#footer-link ul li {
+    list-style: none;
+}
+#footer-link ul li a {
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: block;
+    color: azure;
+}
+
+/* signup */
+#register{
+
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 18px;
+   height: auto;
+   width: 75%;
+   justify-content: center;
+   top:12%;
+   left: 12%;
+   position: absolute; 
+   display: flex;  
+}
+.input{
+   margin: 10px;
+   height: 30px;
+   width: 200px;
+   background-color:rgb(248, 247, 249);
+   border-radius: 5px;
+}
+#signup {
+   display: flex;
+   position: relative;
+   margin-left: 5%;
+   background-color: white;
+   height: 400px;
+   width: 800px;
+}
+.button {
+   height: 40px;
+   width: 70px;
+   border-radius: 5px;
+   margin-left: 15px;
+   background-color: #6ea692;
+}
+#signup #dividecol {
+   display: flex;
+   margin-left: 100px;
+   height: 100%;
+   width: 700px;
+}
+#signup #col1 {
+   padding: 10px 10px 10px 10px ;
+   margin-left: 25px;
+   margin-right: 20px;
+   width:350px ;
+}
+#signup #col2 {
+   padding: 10px 10px 10px 10px ;
+   margin-left: 25px;
+   margin-right: 20px;
+   width:350px ;
+}
+/* log in */
+#log-in {
+   margin-top: 20px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 18px;
+   height: 200px;
+   width: 75%;
+   justify-content: center;
+   left: 12%;
+   display: flex;
+   position: absolute;
+}
+#log-in #signin {
+   background-color: white;
+   display: flex;
+   margin-left: 90px;
+   height: 100%;
+   width: 500px;
+}

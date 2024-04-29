@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content%}
+
+    <span>Create your account.<span>
+    <div id="register">
+    <form id="signup" action="#">
+        <div id="dividecol">
+                <div id="col1">
+                Full Name <br> <input class="input " type="text" name="name" placeholder="Enter your name" > <br>
+                Email <br> <input class="input" type="email" name="email" placeholder="Enter youe email"><br><br>
+                Gender :  <input type="radio" name="Gender" value="m">Male 
+                <input type="radio" name="Gender" value="f">Female
+                <br><br>
+                Address <br> <input class="input" type="text" name="address"  >  
+                <br>
+            </div>
+            <div id="col2">
+                Phone <br><input class="input " type="number" name="phone" placeholder="Enter your number" > <br>
+                
+                Password <br><input class="input" type="password" name="password" value=""> <br>
+                Conform Password <br><input class="input" type="password" name="password" value=""> <br><br>
+                <input class="button" type="submit" value="Sign Up">
+                <input class="button" type="button" type="submit" value="Log in">
+            </div>
+        </div>
+        </form>
+    </div>
+    
+
+{%endblock%}
