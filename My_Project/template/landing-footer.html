@@ -1,5 +1,5 @@
 {% load static %}
-
+<html>
 <footer>
         
     <div id="footer">
@@ -18,10 +18,10 @@
     </div>
     <div id="footer-link">
             <ul>
-                <li class="items"><a href="#">About</a></li>
-                <li class="items"><a href="#">Terms & Conditions</a></li>
-                <li class="items"><a href="#">Disclaimer</a></li>
-                <li class="items"><a href="#">Privacy Policy</a></li>
+                <li class="items"><a href="{% url "about" %}">About</a></li>
+                <li class="items"><a href="{% url "termsandcondition" %}">Terms & Conditions</a></li>
+                <li class="items"><a href="{% url "disclaimer" %}">Disclaimer</a></li>
+                <li class="items"><a href="{% url "privacy_policy" %}">Privacy Policy</a></li>
             </ul>
     </div>
  </footer>

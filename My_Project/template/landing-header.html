@@ -15,10 +15,10 @@
             <input type="text" placeholder="Search here ...">
         </div>
         <ul>
-            <li class="items"><a href="#">Home</a></li>
-            <li class="items"><a href="about">About</a></li>
-            <li class="items"><a href="signin">Sign in</a></li>
-            <li class="items"><a href="signup">Sign up</a></li>
+            <li class="items"><a href="{% url "home" %}">Home</a></li>
+            <li class="items"><a href="{% url "about" %}">About</a></li>
+            <li class="items"><a href="{% url "signin" %}">Sign in</a></li>
+            <li class="items"><a href="{% url "signup" %}">Sign up</a></li>
         </ul>
        
     </nav>

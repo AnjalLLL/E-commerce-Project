@@ -10,3 +10,18 @@ def signup(request):
 
 def signin(request):
   return render(request,"sign-in.html")
+
+def termsandcondition(request):
+  return render(request,"termsandcondition.html")
+
+def about(request):
+  return render(request,"about.html")
+
+def disclaimer(request):
+  return render(request,"disclaimer.html")
+
+
+def privacy_policy(request):
+  return render(request,"privacy_policy.html")
+
+
