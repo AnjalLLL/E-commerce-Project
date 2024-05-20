@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    {% comment %} <i class="glyphicon glyphicon-shopping-cart" style="font-size:24px;margin-top: 15px;"></i> {% endcomment %}
+    <nav id="navbar">
+        <div id="logo"><a href="#">TechTrekker</a></div> 
+        <div class="search">
+            <input type="text" placeholder="Search here ...">
+        </div>
+        <ul>
+            <li class="items"><a href="{% url "dashboard" %}">Home</a></li>
+            {% comment %} <li class="items"><a href="{% url "about" %}">About</a></li> {% endcomment %}
+            <li class="items" style="display:flex" > 
+                <a href="{% url "cart" %}">Cart</a>
+               </li>
+            <li class="items" style="display:flex" >
+                <i class="glyphicon glyphicon-user"
+                 style="font-size:20px;color:lightblue;text-shadow:2px 2px 4px #000000; margin-top: 15px;"></i>
+                <a href="#">My Account</a>
+                </li>
+        </ul>
+       
+    </nav>

@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<footer>
+        
+    <div id="footer">
+        <div id="footer-content">
+            <div id="content">
+                <h2>TechTrekkers</h2><br>
+                <p>Where Innovation Meets Convenience: Your Tech Superstore.</p>
+            </div>
+            <div id="payment">
+                <h2>Payment Partners</h2><br>
+                <div class="pay"><img src="/static/img/esewa.png" alt=""></div>
+                <div class="pay"><img src="/static/img/khalti.png" alt=""></div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="footer-link">
+            <ul>
+                <li class="items"><a href="{% url "about" %}">About</a></li>
+                <li class="items"><a href="{% url "termsandcondition" %}">Terms & Conditions</a></li>
+                <li class="items"><a href="{% url "disclaimer" %}">Disclaimer</a></li>
+                <li class="items"><a href="{% url "privacy_policy" %}">Privacy Policy</a></li>
+            </ul>
+    </div>
+ </footer>
+</body>
+</html>

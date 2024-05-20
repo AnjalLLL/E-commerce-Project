@@ -11,10 +11,10 @@
             <h4 style="color:red;" >{{error}}</h4>
             {% csrf_token %}
                 <div id="col">
-                     Emails <br><input class="input " type="email" name="email" placeholder="Enter your number or emails" > <br>
+                    Emails <br><input class="input " type="email" name="email" placeholder="Enter your number or emails" > <br>
                     Password <br><input class="input" type="password" name="password" value=""> <br>
-                    <input class="button" type="submit" value="Sign Up">
-                    <input class="button" type="button" type="submit" value="Log in">
+                    <input class="button" type="submit" value="Log in">
+                    <a href="{% url "signup" %}"><input class="button" type="button" type="submit" value="Sign Up"></a> 
                 </div>
             </div>
             </form>
