@@ -3,7 +3,8 @@
     
     <span>Create your account.<span>
     <div id="register">
-    <form id="signup" action="#">
+    <form id="signup" action="#" method="post" >
+        {% csrf_token %}
         <div id="dividecol">
                 <div id="col1">
                 Full Name <br> <input class="input " type="text" name="name" placeholder="Enter your name" > <br>
@@ -17,8 +18,8 @@
             <div id="col2">
                 Phone <br><input class="input " type="number" name="phone" placeholder="Enter your number" > <br>
                 
-                Password <br><input class="input" type="password" name="password" value=""> <br>
-                Conform Password <br><input class="input" type="password" name="password" value=""> <br><br>
+                Password <br><input class="input" type="password" name="password1" value=""> <br>
+                Conform Password <br><input class="input" type="password" name="password2" value=""> <br><br>
                 <input class="button" type="submit" value="Sign Up">
                 <input class="button" type="button" type="submit" value="Log in">
             </div>

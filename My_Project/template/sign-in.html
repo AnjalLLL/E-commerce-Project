@@ -7,9 +7,11 @@
         <span>Welcome to TreckTrekkers.Please Login <span>
         <br>
         <div id="log-in">
-        <form id="signin" action="#">
+        <form id="signin" action="#" method="post" >
+            <h4 style="color:red;" >{{error}}</h4>
+            {% csrf_token %}
                 <div id="col">
-                    Phone number or Emails <br><input class="input " type="number" name="phone" placeholder="Enter your number or emails" > <br>
+                     Emails <br><input class="input " type="email" name="email" placeholder="Enter your number or emails" > <br>
                     Password <br><input class="input" type="password" name="password" value=""> <br>
                     <input class="button" type="submit" value="Sign Up">
                     <input class="button" type="button" type="submit" value="Log in">
